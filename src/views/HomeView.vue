@@ -3,17 +3,38 @@
 
 <template>
   <main>
+    <div class="filter-layer" >
     <header>
-      <img alt="Vue logo" class="logo" src="../assets/logo.svg" />
+      <img alt="gogochuckle" class="logo" src="../assets/logo.svg" />
       <div class="motto" >
         <span class="a-decor1"><a class="motto-a" href="">永远追求</a></span>，
         <span class="a-decor2"><a class="motto-a" href="">永远尝试</a></span>。
       </div>
     </header>
+  </div>
   </main>
 </template>
 
 <style scoped>
+
+main {
+  background: url('https://image.gogochuckle.com/gitee/spaceX.jpg') 100% no-repeat #aaa;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.filter-layer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(61,66,96,.4);
+  background-image: linear-gradient(140deg,rgba(61,66,96,.4) 15%,rgba(31,34,49,.6));
+  opacity: .9;
+}
+
 
 header {
   display: flex;
@@ -30,6 +51,7 @@ header {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-drag: none;
+  z-index: 1000;
 }
 
 .motto {

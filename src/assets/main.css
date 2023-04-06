@@ -1,12 +1,5 @@
 @import './base.css';
 
-body {
-  background: url('https://image.gogochuckle.com/gitee/spaceX.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 #app {
   width: 100%;
   height: 100%;
@@ -42,6 +35,6 @@ a {
 
   #app {
     display: flex;
-    padding: 0 2rem;
+    padding: 0 0;
   }
 }
