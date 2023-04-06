@@ -4,12 +4,10 @@
 <template>
   <main>
     <header>
-      <a href="" class="a-logo" >
-        <img alt="Vue logo" class="logo" src="../assets/logo.svg" />
-      </a>
+      <img alt="Vue logo" class="logo" src="../assets/logo.svg" />
       <div class="motto" >
-        <a class="motto-a" href="">永远追求</a>，
-        <a class="motto-a" href="">永远尝试</a>。
+        <span class="a-decor1"><a class="motto-a" href="">永远追求</a></span>，
+        <span class="a-decor2"><a class="motto-a" href="">永远尝试</a></span>。
       </div>
     </header>
   </main>
@@ -23,17 +21,9 @@ header {
   place-items: center;
 }
 
-.a-logo {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-drag: none;
-}
-
 .logo {
-  width: 55rem;
-  height: 10rem;
+  width: 33rem;
+  height: 6rem;
   margin: 0;
   user-select: none;
   -webkit-user-select: none;
@@ -43,8 +33,8 @@ header {
 }
 
 .motto {
-  color: #000;
-  font-size: 20px;
+  color: antiquewhite;
+  font-size: 18px;
   font-weight: bold;
   padding: 20px;
   white-space: normal;
@@ -54,13 +44,38 @@ header {
   -ms-user-select: none;
 }
 
-motto-a {
-  color: #000;
-  font-size: 20px;
+.motto-a {
+  color: antiquewhite;
   font-weight: bold;
 }
 
+.a-decor1 {
+  padding: 3px 0 3px 0;
+  background: linear-gradient(to right, #736efe, #00bfe8) no-repeat right bottom;
+  background-size: 0 2px;
+  transition: background-size 500ms;
+}
+.a-decor1:hover {
+  background-position-x: left;
+  background-size: 100% 2px;
+}
+.a-decor2 {
+  padding: 3px 0 3px 0;
+  background: linear-gradient(to right, #00bfe8, #736efe) no-repeat right bottom;
+  background-size: 0 2px;
+  transition: background-size 500ms;
+}
+.a-decor2:hover {
+  background-position-x: left;
+  background-size: 100% 2px;
+}
+
 a {
-  text-decoration: none
+  text-decoration: none;
+}
+
+a:hover {
+  color: aliceblue;
+  text-decoration: none;
 }
 </style>
